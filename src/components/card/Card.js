@@ -1,7 +1,7 @@
-// import { Component } from "react";
+import { Component } from "react";
 import "./card.style.css";
 
-// Class Component
+// // Class Component
 
 // class Card extends Component {
 //   render() {
@@ -21,7 +21,8 @@ import "./card.style.css";
 
 // Functional Component
 
-const Card = ({ name, email, id }) => {
+const Card = ({ monster }) => {
+  const { id, name, email } = monster;
   return (
     <div className="card__container" key={id}>
       <img
